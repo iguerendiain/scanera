@@ -1,0 +1,3 @@
+include ':scanera'
+include ':app'
+rootProject.name = "Scanera"
