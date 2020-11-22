@@ -1,11 +1,10 @@
-package nacholab.scanera
+package nacholab.scanera.lib.utils
 
 import android.graphics.Bitmap
 import org.opencv.android.Utils
 import org.opencv.calib3d.Calib3d
 import org.opencv.core.*
 import org.opencv.imgcodecs.Imgcodecs
-import org.opencv.imgcodecs.Imgcodecs.IMREAD_REDUCED_COLOR_4
 import org.opencv.imgproc.Imgproc
 import kotlin.math.max
 

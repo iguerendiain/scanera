@@ -12,7 +12,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "20201102"
+        versionName "poc1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -31,6 +31,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+}
+
+tasks.withType(Javadoc) {
+    failOnError false
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
 }
 
 dependencies {
@@ -52,3 +59,6 @@ dependencies {
     implementation 'com.quickbirdstudios:opencv:4.3.0'
 //    implementation 'com.quickbirdstudios:opencv:4.3.0-contrib'
 }
+
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'

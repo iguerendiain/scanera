@@ -5,12 +5,10 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.core.content.FileProvider
-import nacholab.scanera.Scanera
+import nacholab.scanera.lib.Scanera
 import java.io.File
 
 class MainActivity : AppCompatActivity() {

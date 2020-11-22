@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.ui
 
 import android.os.Bundle
 import android.view.View
@@ -10,6 +10,9 @@ import com.otaliastudios.cameraview.controls.Audio
 import com.otaliastudios.cameraview.controls.Facing
 import com.otaliastudios.cameraview.controls.Flash
 import kotlinx.android.synthetic.main.scanera_camera.*
+import nacholab.lib.R
+import nacholab.scanera.lib.utils.navigate
+import nacholab.scanera.lib.utils.setupAndroidUI
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import java.io.File
 

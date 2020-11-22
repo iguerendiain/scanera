@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.utils
 
 import android.app.Application
 import android.content.ContentResolver
@@ -6,7 +6,6 @@ import android.content.ContentUris
 import android.content.Context
 import android.media.MediaMetadataRetriever
 import android.net.Uri
-import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.webkit.MimeTypeMap

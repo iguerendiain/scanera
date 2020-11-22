@@ -1,0 +1,33 @@
+apply plugin: 'com.jfrog.bintray'
+
+version = 'poc1'
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+Properties properties = new Properties()
+properties.load( new FileInputStream("local.properties"))
+
+// Bintray
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    pkg {
+        repo = 'scanera'
+        name = 'scanera-lib'
+        configurations = ['archives']
+        desc = 'Scanera lib'
+        websiteUrl = 'https://github.com/iguerendiain/scanera'
+        vcsUrl = 'https://github.com/iguerendiain/scanera.git'
+        licenses = ["Apache-2.0"]
+        publish = true
+        publicDownloadNumbers = true
+    }
+}

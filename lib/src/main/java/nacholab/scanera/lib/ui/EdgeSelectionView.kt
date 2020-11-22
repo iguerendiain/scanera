@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.ui
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.utils
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -9,10 +9,13 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import nacholab.lib.R
 
 const val NAVIGATION_TAG = "NAVIGATION"
 
-fun Fragment.getNavController() = activity?.let { Navigation.findNavController(it, R.id.mainFragment) }
+fun Fragment.getNavController() = activity?.let { Navigation.findNavController(it,
+    R.id.mainFragment
+) }
 
 fun Fragment.navigate(target: Int){
     try {

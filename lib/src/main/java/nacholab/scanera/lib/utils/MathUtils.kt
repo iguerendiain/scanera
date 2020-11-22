@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.utils
 
 import kotlin.math.hypot
 

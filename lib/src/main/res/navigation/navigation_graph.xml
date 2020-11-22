@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/cameraFragment"
-        android:name="nacholab.scanera.CameraFragment"
+        android:name="nacholab.scanera.lib.ui.CameraFragment"
         android:label="CameraFragment" >
         <action
             android:id="@+id/action_cameraFragment_to_edgeSetupFragment"
@@ -17,11 +17,11 @@
     </fragment>
     <fragment
         android:id="@+id/photoEditFragment"
-        android:name="nacholab.scanera.PhotoEditFragment"
+        android:name="nacholab.scanera.lib.ui.PhotoEditFragment"
         android:label="PhotoEditFragment" />
     <fragment
         android:id="@+id/edgeSetupFragment"
-        android:name="nacholab.scanera.EdgeSetupFragment"
+        android:name="nacholab.scanera.lib.ui.EdgeSetupFragment"
         android:label="EdgeSetupFragment" >
         <action
             android:id="@+id/action_edgeSetupFragment_to_photoEditFragment"

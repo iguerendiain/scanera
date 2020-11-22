@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.ui
 
 import android.os.Build
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
 import androidx.fragment.app.Fragment
+import nacholab.scanera.lib.Scanera
 
 abstract class BaseFragment : Fragment() {
 

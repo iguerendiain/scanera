@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib.utils
 
 import android.content.Context
 import android.content.res.Resources

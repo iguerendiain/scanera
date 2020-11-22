@@ -1,10 +1,14 @@
-package nacholab.scanera
+package nacholab.scanera.lib.ui
 
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
 import androidx.core.os.bundleOf
 import kotlinx.android.synthetic.main.edge_setup_fragment.*
+import nacholab.lib.*
+import nacholab.scanera.lib.utils.getBitmapWithCorrectOrientation
+import nacholab.scanera.lib.utils.navigate
+import nacholab.scanera.lib.utils.perspective2TopToBottomOrthogonal
 import org.jetbrains.anko.imageBitmap
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import java.io.File

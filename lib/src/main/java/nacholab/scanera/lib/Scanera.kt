@@ -1,4 +1,4 @@
-package nacholab.scanera
+package nacholab.scanera.lib
 
 import android.annotation.SuppressLint
 import android.os.Build
@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowInsetsController
-import nacholab.scanera.R.layout.scanera_main_activity
+import nacholab.lib.R.layout.scanera_main_activity
 import org.opencv.android.OpenCVLoader
 import java.io.File
 

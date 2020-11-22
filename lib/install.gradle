@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'nacholab'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'nacholab'
+                artifactId 'scanera.lib'
+                name 'Scanera'
+                description 'Scanera Lib'
+                url 'https://github.com/iguerendiain/scanera'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'iguerendiain'
+                        name 'Ignacio Guerendiain'
+                        email 'iguerendiain@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/iguerendiain/scanera.git'
+                    developerConnection 'https://github.com/iguerendiain/scanera.git'
+                    url 'https://github.com/iguerendiain/scanera'
+                }
+            }
+        }
+    }
+}
